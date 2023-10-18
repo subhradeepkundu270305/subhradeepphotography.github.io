@@ -1,0 +1,120 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Global styles */
+body {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+header {
+    background-color: seagreen;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.hero {
+    background-image: url('https://images.pexels.com/photos/1447259/pexels-photo-1447259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    color: rgb(250, 253, 251);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color:seagreen;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.portfolio {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.project {
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50px;
+}
+
+.about {
+    background-image: url('https://images.pexels.com/photos/173665/pexels-photo-173665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover ;
+    padding: 100px 0 ; 
+    text-align: center;
+}
+
+.contact {
+    background-image: url('https://images.pexels.com/photos/4466468/pexels-photo-4466468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about p, .contact p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    .logo h1 {
+        font-size: 36px;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+}
